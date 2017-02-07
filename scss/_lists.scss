@@ -1,0 +1,53 @@
+/*========================================================
+                     List styles
+=========================================================*/
+/*=================     Inline List    ====================*/
+.inline-list {
+  @include clearfix();
+  > li {
+    float: left;
+    & + li {
+      margin-left: 10px;
+    }
+  }
+  &__filter-mod {
+    > li {
+      & + li {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/*=================     Marked Llist    ====================*/
+.marked-list {
+  li {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+/*=================     Item Llist    ====================*/
+.item-list {
+  > li {
+    display: block;
+    & + li {
+      margin-top: 5px;
+    }
+  }
+}
+
+/*=================     Color Llist    ====================*/
+.color-list{
+  > li{
+    &:nth-child(even){
+      background: lighten(desaturate(adjust-hue($default, -227.3684), 12.2581), 60.5882);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<list name ="Тип занятости">
+    <item><id>1</id><name>Безработный</name></item>
+    <item><id>2</id><name>Постоянная работа</name></item>
+    <item><id>3</id><name>Пенсионер</name></item>
+    <item><id>4</id><name>Работает</name></item>
+    <item><id>5</id><name>Студент</name></item>
+    <item><id>6</id><name>Официально трудоустроен</name></item>
+    <item><id>7</id><name>Неофициально трудоустроен</name></item>
+    <item><id>8</id><name>Предприниматель</name></item>
+</list>

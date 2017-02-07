@@ -1,0 +1,4 @@
+<list name ="Пол">
+    <item><id>1</id><name>Мужской</name></item>
+    <item><id>2</id><name>Женский</name></item>
+</list>

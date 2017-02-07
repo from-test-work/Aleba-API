@@ -1,0 +1,91 @@
+<list name ="Регион">
+    <item><id>1</id><name>Адыгея</name></item>
+    <item><id>2</id><name>Алтай</name></item>
+    <item><id>3</id><name>Бурятия</name></item>
+    <item><id>4</id><name>Мордовия</name></item>
+    <item><id>5</id><name>Ненецкий АО</name></item>
+    <item><id>6</id><name>Омская область</name></item>
+    <item><id>7</id><name>Пермский край</name></item>
+    <item><id>8</id><name>Саха /Якутия/</name></item>
+    <item><id>9</id><name>Татарстан</name></item>
+    <item><id>10</id><name>Томская область</name></item>
+    <item><id>11</id><name>Тыва</name></item>
+    <item><id>12</id><name>Тюменская область</name></item>
+    <item><id>13</id><name>Удмуртская</name></item>
+    <item><id>14</id><name>Хакасия</name></item>
+    <item><id>15</id><name>Чеченская</name></item>
+    <item><id>16</id><name>Чувашская</name></item>
+    <item><id>17</id><name>Чукотский АО</name></item>
+    <item><id>18</id><name>Дагестан</name></item>
+    <item><id>19</id><name>Ингушетия</name></item>
+    <item><id>20</id><name>Калмыкия</name></item>
+    <item><id>21</id><name>Карелия</name></item>
+    <item><id>22</id><name>Коми</name></item>
+    <item><id>23</id><name>Курская область</name></item>
+    <item><id>24</id><name>Марий Эл</name></item>
+    <item><id>25</id><name>Ивановская область</name></item>
+    <item><id>26</id><name>Калужская область</name></item>
+    <item><id>27</id><name>Красноярский край</name></item>
+    <item><id>28</id><name>Ленинградская область</name></item>
+    <item><id>29</id><name>Мурманская область</name></item>
+    <item><id>30</id><name>Приморский край</name></item>
+    <item><id>31</id><name>Тульская область</name></item>
+    <item><id>32</id><name>Хабаровский край</name></item>
+    <item><id>33</id><name>Ямало-Ненецкий  АО</name></item>
+    <item><id>34</id><name>Белгородская область</name></item>
+    <item><id>35</id><name>Брянская область</name></item>
+    <item><id>36</id><name>Вологодская область</name></item>
+    <item><id>37</id><name>Воронежская область</name></item>
+    <item><id>38</id><name>Кировская область</name></item>
+    <item><id>40</id><name>Алтайский край</name></item>
+    <item><id>41</id><name>Забайкальский край</name></item>
+    <item><id>42</id><name>Камчатский край</name></item>
+    <item><id>43</id><name>Курганская область</name></item>
+    <item><id>44</id><name>Липецкая область</name></item>
+    <item><id>45</id><name>Магаданская область</name></item>
+    <item><id>46</id><name>Московская область</name></item>
+    <item><id>47</id><name>Пензенская область</name></item>
+    <item><id>48</id><name>Ростовская область</name></item>
+    <item><id>49</id><name>Саратовская область</name></item>
+    <item><id>50</id><name>Тверская область</name></item>
+    <item><id>51</id><name>Нижегородская область</name></item>
+    <item><id>52</id><name>Смоленская область</name></item>
+    <item><id>53</id><name>Рязанская область</name></item>
+    <item><id>54</id><name>Самарская область</name></item>
+    <item><id>55</id><name>Сахалинская область</name></item>
+    <item><id>56</id><name>Архангельская область</name></item>
+    <item><id>57</id><name>Волгоградская область</name></item>
+    <item><id>58</id><name>Еврейская АОбл</name></item>
+    <item><id>59</id><name>Иркутская область</name></item>
+    <item><id>60</id><name>Карачаево-Черкесская</name></item>
+    <item><id>61</id><name>Кемеровская область</name></item>
+    <item><id>62</id><name>Костромская область</name></item>
+    <item><id>63</id><name>Ульяновская область</name></item>
+    <item><id>64</id><name>Амурская область</name></item>
+    <item><id>65</id><name>Псковская область</name></item>
+    <item><id>66</id><name>Таймырский (Долгано-Ненецкий) АО</name></item>
+    <item><id>67</id><name>Астраханская область</name></item>
+    <item><id>68</id><name>Корякский АО</name></item>
+    <item><id>69</id><name>Новгородская область</name></item>
+    <item><id>70</id><name>Северная Осетия - Алания</name></item>
+    <item><id>71</id><name>Усть-Ордынский Бурятский  АО</name></item>
+    <item><id>72</id><name>Башкортостан</name></item>
+    <item><id>73</id><name>Владимирская область</name></item>
+    <item><id>74</id><name>Кабардино-Балкарская</name></item>
+    <item><id>75</id><name>Краснодарский край</name></item>
+    <item><id>76</id><name>Свердловская область</name></item>
+    <item><id>77</id><name>Ставропольский край</name></item>
+    <item><id>78</id><name>Ярославская область</name></item>
+    <item><id>79</id><name>Калининградская область</name></item>
+    <item><id>80</id><name>Новосибирская область</name></item>
+    <item><id>81</id><name>Оренбургская область</name></item>
+    <item><id>82</id><name>Орловская область</name></item>
+    <item><id>83</id><name>Тамбовская область</name></item>
+    <item><id>84</id><name>Ханты-Мансийский Автономный округ - Югра АО</name></item>
+    <item><id>85</id><name>Челябинская область</name></item>
+    <item><id>86</id><name>Санкт-Петербург</name></item>
+    <item><id>87</id><name>Крым</name></item>
+    <item><id>88</id><name>Севастополь</name></item>
+    <item><id>89</id><name>Вся Россия</name></item>
+    <item><id>90</id><name>Москва</name></item>
+</list>

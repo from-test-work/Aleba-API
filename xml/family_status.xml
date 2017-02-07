@@ -1,0 +1,9 @@
+<list name ="Семейное положение">
+    <item><id>№</id><name>Описание</name></item>
+    <item><id>0</id><name>Не женат(не замужем)</name></item>
+    <item><id>1</id><name>В браке</name></item>
+    <item><id>2</id><name>В разводе</name></item>
+    <item><id>3</id><name>Гражданский брак</name></item>
+    <item><id>4</id><name>Повторный брак</name></item>
+    <item><id>5</id><name>Вдовец(вдова)</name></item>
+</list>

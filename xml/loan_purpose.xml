@@ -1,0 +1,13 @@
+<list name ="Цели займа">
+    <item><id>1</id><name>Подарки</name></item>
+    <item><id>2</id><name>Медицина</name></item>
+    <item><id>3</id><name>Жилищные нужды</name></item>
+    <item><id>4</id><name>Поездки</name></item>
+    <item><id>5</id><name>Документы</name></item>
+    <item><id>6</id><name>Другой кредит</name></item>
+    <item><id>7</id><name>Штрафы</name></item>
+    <item><id>8</id><name>Бизнес</name></item>
+    <item><id>9</id><name>Дети</name></item>
+    <item><id>10</id><name>Обучение</name></item>
+    <item><id>11</id><name>другое</name></item>
+</list>

@@ -1,0 +1,626 @@
+@import "_normalize.scss";
+@import "_mixins.scss";
+@import "_variables.scss";
+//Fonts
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(//cdn.materialdesignicons.com/1.4.57/css/materialdesignicons.min.css);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic);
+
+/*========================================================
+                      Main Styles
+=========================================================*/
+body {
+  background: $content-bg;
+  color: $default;
+  font: 400 15px/20px $default-font;
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1, .h1 {
+  font: 700 30px/1.2 $default-font;
+}
+
+h2, .h2 {
+  font: 700 30px/1.2 $default-font;
+}
+
+h3, .h3 {
+  font: 700 18px/24px $default-font;
+}
+
+h4, .h4 {
+  font: 700 15px/20px $default-font;
+}
+
+h5, .h5 {
+  font: 700 15px/20px $default-font;
+}
+
+h6, .h6 {
+  font: 700 15px/20px $default-font;
+}
+
+p, .marked-list, .list {
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .fa {
+    text-decoration: none;
+  }
+}
+
+time {
+  display: block;
+  color: $default;
+  font: 700 18px/18px $default-font;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: $link-color;
+  font-weight: 400;
+  @include transition(0.4s ease all);
+  &:hover {
+    color: lighten(desaturate(adjust-hue($link-color, 0.1658), 32.8122), 24.1176); //#67a9df
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    color: lighten(desaturate(adjust-hue($link-color, -0.0417), 33.1316), 12.1569); //#358dd4
+  }
+}
+
+a[href^="tel:"],
+a[href^="callto:"],
+a[href="mailto:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fa {
+  line-height: inherit;
+}
+
+[class*='fa-'] {
+  &:before {
+    font-weight: 400;
+    font-family: $fa;
+  }
+}
+
+.page {
+  overflow: hidden;
+
+  .lt-ie9 & {
+    min-width: 1200px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.center991 {
+  @media (max-width: 991px) {
+    text-align: center;
+    clear: both;
+  }
+}
+
+.center767 {
+  @media (max-width: 767px) {
+    text-align: center;
+    clear: both;
+  }
+}
+
+.center479 {
+  @media (max-width: 479px) {
+    text-align: center;
+    clear: both;
+  }
+}
+
+.strong {
+  font-weight: 700;
+}
+
+input {
+  outline: none;
+}
+
+input[type='submit'] {
+  cursor: pointer;
+}
+
+address {
+  dl {
+    @include clearfix();
+    & + dl {
+      margin-top: 10px;
+    }
+  }
+  dt {
+    display: block;
+    line-height: 20px;
+  }
+  dd {
+    display: block;
+    color: $primary;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
+
+.ib {
+  display: inline-block;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  @include transition(0.4s ease all);
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  @include transition(0.4s ease all);
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.fw-ligth {
+  font-weight: 300;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/*=======================================================
+                       Main Layout
+=========================================================*/
+* + .offs1 {
+  margin-top: 10px;
+}
+
+* + .offs2 {
+  margin-top: 20px;
+}
+
+* + .offs3 {
+  margin-top: 30px;
+}
+
+* + .offs4 {
+  margin-top: 40px;
+}
+
+* + .offs5 {
+  margin-top: 50px;
+}
+
+* + .offs6 {
+  margin-top: 60px;
+}
+
+* + .offs7 {
+  margin-top: 70px;
+}
+
+* + .offs8 {
+  margin-top: 80px;
+}
+
+* + .offs9 {
+  margin-top: 90px;
+}
+
+* + .offs10 {
+  margin-top: 100px;
+}
+
+p + p {
+  margin-top: 10px;
+}
+
+/*=======================================================
+                        Components
+=========================================================*/
+/*==================     Icons     ======================*/
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus,
+.fa-linkedin,
+.fa-vk,
+.fa-odnoklassniki {
+  text-align: center;
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  color: $white;
+  @include transition(0.4s ease);
+  @include border-radius(4px);
+}
+
+/*==================  Backgrounds  ======================*/
+.bg-primary {
+  background: $primary;
+}
+
+.bg-secondary {
+  background: $secondary;
+}
+
+.bg-black {
+  background: $black;
+}
+
+.bg-default {
+  background: $default;
+}
+
+.bg-white {
+  background: $white;
+}
+
+/*==================  Colors  ======================*/
+.white-color {
+  color: $white;
+}
+
+.default-color {
+  color: $default;
+}
+
+.black-color {
+  color: $black;
+}
+
+.primary-color {
+  color: $primary;
+}
+
+/*==================    Buttons    ======================*/
+.btn1 {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $default;
+  background: $primary;
+  width: 100%;
+  font: 700 12px/1 $default-font;
+  padding: calc((37px - 11px - 0px) / 2) 20px;
+  //border: 1px solid $primary;
+  @include transition(0.4s ease all);
+  @include border-radius(8px);
+  &:hover,
+  &:active {
+    color: $white;
+    background: $default;
+  }
+  &:active {
+    box-shadow: inset 0 3px 10px 0 rgba(50, 50, 50, 0.65);
+  }
+}
+
+/*==================    B O X  ==================*/
+.box {
+  @include clearfix();
+  &__asside {
+    float: left;
+    margin-right: 20px;
+    height: auto;
+  }
+  &__cnt {
+    overflow: hidden;
+  }
+}
+
+//====================== HEADER ======================//
+.headInfo {
+  &.box {
+    &__asside {
+      width: 300px;
+    }
+    &__cnt {
+      width: calc(100% - 300px - 25px);
+    }
+  }
+  .brand {
+    width: 228px;
+    height: 69px;
+  }
+  .contacts {
+    p {
+      font-weight: 700;
+      font-family: $default-font;
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+      span {
+        font-weight: 400;
+      }
+    }
+    .head-title {
+      font-size: 18px;
+    }
+    .head-contact {
+      li {
+        p {
+          font-size: 14px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .headInfo {
+    &.box {
+      .box__cnt {
+        margin: 0;
+        padding-top: 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .headInfo {
+    &.box {
+      .box__cnt {
+        margin: 0;
+        padding-top: 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//==================    Imports    ======================
+@import "_lists.scss";
+/*========================================================
+                     HEADER  Section
+=========================================================*/
+header {
+  background: $header-bg;
+  margin: 20px 0;
+}
+/*========================================================
+                     CONTENT  Section
+=========================================================*/
+main {
+  background: $content-bg;
+}
+
+.SEO-Text {
+  padding-top: 15px;
+  font: 400 16px/1.2 $default-font;
+  ul {
+    padding-top: 15px;
+    display: block;
+    li {
+      display: block;
+      padding-left: 20px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        top: 6px;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background: $black;
+        @include border-radius(50%);
+      }
+      & + li{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+//------------------------- responsive table block -------------------------------------------
+.rwd-table {
+  color: $black;
+  border-radius: .4em;
+  overflow: hidden;
+  width: 100%;
+  th, td {
+    margin: .5em 1em;
+  }
+  th, td:before {
+    color: $black;
+    font-weight: 700;
+  }
+  td:last-child {
+    span {
+      font-size: 30px;
+    }
+  }
+  .divided {
+    margin: 0 -1em;
+    h3, .h3 {
+      background: #ddd;
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  .rwd-table {
+    th, td {
+      padding: 1em !important;
+    }
+    td {
+      &:last-child {
+        text-align: center;
+      }
+    }
+  }
+}
+
+//responsive
+.rwd-table {
+  margin: 1em 0;
+  tr {
+    //border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+    &:before {
+      content: attr(data-th) ": ";
+      font-weight: bold;
+      width: 10em;
+      display: inline-block;
+    }
+  }
+  th, td {
+    text-align: left;
+  }
+}
+
+@media(min-width: 768px) {
+  .rwd-table {
+    td {
+      &:before {
+        display: none;
+      }
+    }
+    th, td {
+      display: table-cell;
+      padding: .25em .5em;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rwd-table {
+    td {
+      &.divided:before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .rwd-table {
+    td {
+      &:before {
+        display: block;
+      }
+    }
+  }
+}
+//--------------------------------------------------------------------
+
+/*==================      Well     ======================*/
+
+.well {
+  margin-top: 60px;
+}
+
+.well2 {
+  margin-top: 100px;
+}
+
+.well3 {
+  margin-top: 40px;
+}
+
+/*========================================================
+                     FOOTER  Styles
+=========================================================*/
+footer {
+  background: $footer-bg;
+  margin-top: 50px;
+}
+
+//----------------------------------------------------------------------------------
+//                                DORABOTKI
+//----------------------------------------------------------------------------------
+
+.directory{
+
+  h3, .h3{
+    margin-top: 20px;
+    background: #ddd;
+    span{
+      font-weight: 400;
+      font-size: 15px;
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+
+  .rwd-table{
+    tr{
+      td{
+        &:last-child{
+          text-align: left;
+        }
+      }
+    }
+  }
+}

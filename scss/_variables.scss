@@ -1,0 +1,30 @@
+//========================================================
+//                     Variables
+//=========================================================
+//Colors
+$white: #ffffff;
+$black: #000000;
+$default: #444857;
+$primary: #e6ad47;
+$secondary: #edff40;
+$link-color: #0270c9;
+$danger-color: #cd3d22;
+$success-color: #6cbb2c;
+
+//Backgrounds
+$header-bg: $white;
+$content-bg: lighten(desaturate(adjust-hue($primary, -42.8235), 100.0000), 44.9020);
+$footer-bg: $black;
+
+//Fonts
+$default-font: 'Open Sans', sans-serif;
+$linecons-font: 'Linecons';
+$fa: 'FontAwesome';
+$material-font: "Material Design Icons";
+$icons1: "\e001", "\e000", "\e007";
+$i: 0;
+
+
+
+$social-clrs: #56789c, #3b579d, #1bb2e9, #f2720c;
+$social-footer-clrs: #7795c4, #526191, #e79a4b, #e16c4d, #72c2fc;

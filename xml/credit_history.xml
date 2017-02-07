@@ -1,0 +1,7 @@
+<list name ="Кредитная история">
+    <item><id>1</id><name>Никогда не брал кредитов</name></item>
+    <item><id>2</id><name>Не было просрочек</name></item>
+    <item><id>3</id><name>Закрытые просрочки</name></item>
+    <item><id>4</id><name>Текущие просрочки</name></item>
+    <item><id>5</id><name>Работают коллекторы</name></item>
+</list>

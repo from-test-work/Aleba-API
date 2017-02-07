@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Главая</title>
+    <!-- Links -->
+
+
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- JS -->
+
+</head>
+<body>
+<div class="mmenu-overlay_full invisible"></div>
+<div class="page">
+    <!--============================
+    HEADER
+    =============================-->
+    <header class="header">
+        <section>
+            <div class="container">
+                <div class="headInfo box">
+                    <div class="box__asside">
+                        <div class="brand">
+                            <a href="aleba.ru"><img src="images/2.gif" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="box__cnt offs1">
+                        <div class="contacts">
+                            <p class="head-title">ООО “Алеба”</p>
+                            <ul class="head-contact inline-list offs1">
+                                <li>
+                                    <p>
+                                        Тел:
+                                        <a href="callto:#">8-800-333-25-60</a>
+                                        <span>,</span>
+                                    </p>
+
+                                </li>
+                                <li>
+                                    <p>
+                                        E-mail:
+                                        <a href="mailto:#">info@aleba.ru</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--============================
+    MAIN
+    =============================-->
+    <main class="main">
+
+        <!-- Заглавная информация -->
+        <section class="well">
+            <div class="container">
+                <div class="center description ">
+                    <h1 class="h1">Инструкция для шлюза cgi</h1>
+
+                    <div class="SEO-Text">
+                        <p>
+                            Запросы на регистрацию заявки следует отправлять, как POST запрос на адрес:<br/>
+                            <a href="">https://aleba.ru/Application/GenericApi?userId={userId}&programId={programId}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Основная часть - Список параметров -->
+        <section class="well2">
+            <div class="container">
+                <div class="parametrAPI center">
+                    <h3>Список параметров:</h3>
+                </div>
+                <table class="rwd-table">
+                    <tr>
+                        <th>Название параметра</th>
+                        <th>Код поля</th>
+                        <th>Тип</th>
+                        <th>Пример</th>
+                        <th>Обязательный</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="divided">
+                            <h3 class="h3 center">Технические параметры</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Параметр">Id вебмастера</td>
+                        <td data-th="Код поля">userId</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Id домена</td>
+                        <td data-th="Код поля">domainId</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Id программы (оффера)</td>
+                        <td data-th="Код поля">programId</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Субаккаунт</td>
+                        <td data-th="Код поля">sub</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="divided">
+                            <h3 class="h3 center">Базовые параметры</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Параметр">ФИО</td>
+                        <td data-th="Код поля">Fio</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Имя</td>
+                        <td data-th="Код поля">FirstName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Иван</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Отчество</td>
+                        <td data-th="Код поля">MiddleName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Андреевич</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Фамилия</td>
+                        <td data-th="Код поля">LastName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Ургант</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Дата рождения</td>
+                        <td data-th="Код поля">BirthDate</td>
+                        <td data-th="Тип">Дата (формат: дд.мм.гггг)</td>
+                        <td data-th="Пример">31.12.1976</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Пол</td>
+                        <td data-th="Код поля">SexId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#sex">Пол</a></td>
+                        <td data-th="Пример">Мужской</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Семейное положение</td>
+                        <td data-th="Код поля">MaritalStatus</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#family_status">Семейное положение</a></td>
+                        <td data-th="Пример">В браке</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Количество детей</td>
+                        <td data-th="Код поля">ChildCount</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">3</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Мобильный телефон</td>
+                        <td data-th="Код поля">MobilePhone</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">х (хххх) хх-хх-хх</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Второй телефон</td>
+                        <td data-th="Код поля">Phone2</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">х (хххх) хх-хх-хх</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">e-mail</td>
+                        <td data-th="Код поля">Email</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">mail@mail.ru</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Предмет заявки</td>
+                        <td data-th="Код поля">Subject</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Цена предмета заявки</td>
+                        <td data-th="Код поля">SubjectPrice</td>
+                        <td data-th="Тип">Число с плавающей запятой</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Срок займа/кредита, в днях</td>
+                        <td data-th="Код поля">LoanTermDays</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">365</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Цель займа</td>
+                        <td data-th="Код поля">LoanPurposeId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#loan_purpose">Цели займа</a></td>
+                        <td data-th="Пример">Подарки</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Кредитная история</td>
+                        <td data-th="Код поля">CreditHistoryId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#credit_history">Кредитная история</a></td>
+                        <td data-th="Пример">Никогда не брал кредитов</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Комментарий</td>
+                        <td data-th="Код поля">Comment</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="divided">
+                            <h3 class="h3 center">Адрес проживания</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Параметр">Регион отправки заявки (строка)</td>
+                        <td data-th="Код поля">RegionName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Адыгея</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Регион отправки заявки</td>
+                        <td data-th="Код поля">RegionId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#region">Регион</a></td>
+                        <td data-th="Пример">Адыгея</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Город отправки заявки (строка)</td>
+                        <td data-th="Код поля">CityName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Адыгейск</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Город отправки заявки</td>
+                        <td data-th="Код поля">CityId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#city">Город</a></td>
+                        <td data-th="Пример">Адыгейск</td>
+                        <td data-th="Обязательный"><span>+</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Улица (адрес проживания)</td>
+                        <td data-th="Код поля">LivingStreet</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Ленина</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Номер дома/строения (адрес проживания)</td>
+                        <td data-th="Код поля">LivingBuilding</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">34</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Корпус дома/строения (адрес проживания)</td>
+                        <td data-th="Код поля">LivingHousing</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">2А</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Квартира (адрес проживания)</td>
+                        <td data-th="Код поля">LivingApartment</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">65</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Домашний телефон (адрес проживания)</td>
+                        <td data-th="Код поля">LivingAddressPhone</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">хх хх хх</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="divided">
+                            <h3 class="h3 center">Адрес регистрации</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Параметр">Адрес проживания совпадает с адресом регистрации</td>
+                        <td data-th="Код поля">CoincidesWithAddressRegistration</td>
+                        <td data-th="Тип">Логическое (формат: True, False)</td>
+                        <td data-th="Пример">Да / Нет</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Регион регистрации Строка</td>
+                        <td data-th="Код поля">RegistrationRegionName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Московская область</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Регион регистрации</td>
+                        <td data-th="Код поля">RegistrationRegionId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#region">Регион</a></td>
+                        <td data-th="Пример">Московская область</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Город регистрации Строка</td>
+                        <td data-th="Код поля">RegistrationCityName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Москва</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Город регистрации</td>
+                        <td data-th="Код поля">RegistrationCityId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#city">Город</a></td>
+                        <td data-th="Пример">Москва</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Улица (адрес регистрации)</td>
+                        <td data-th="Код поля">RegistrationStreet</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">ул. Никольская</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Номер дома/строения (адрес регистрации)</td>
+                        <td data-th="Код поля">RegistrationBuilding</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">10/2</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Корпус дома/строения (адрес регистрации)</td>
+                        <td data-th="Код поля">RegistrationHousing</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">3Б</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Квартира (адрес регистрации)</td>
+                        <td data-th="Код поля">RegistrationApartment</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">13</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Домашний телефон (адрес регистрации)</td>
+                        <td data-th="Код поля">RegistrationAddressPhone</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">хх хх хх</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="divided">
+                            <h3 class="h3 center">Паспортные данные</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Параметр">Место рождения (по паспорту)</td>
+                        <td data-th="Код поля">PassportBirthPlace</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Номер паспорта</td>
+                        <td data-th="Код поля">PassportNumber</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Серия паспорта</td>
+                        <td data-th="Код поля">PassportSeries</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Код подразделения учреждения, выдавшего паспорт</td>
+                        <td data-th="Код поля">PassportIssueSubunitCode</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Дата выдачи паспорта</td>
+                        <td data-th="Код поля">PassportIssueDate</td>
+                        <td data-th="Тип">Дата (формат: дд.мм.гггг)</td>
+                        <td data-th="Пример">31.12.1990</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Учреждение, выдавшее паспорт</td>
+                        <td data-th="Код поля">PassportIssuingAuthority</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="divided">
+                            <h3 class="h3 center">Работа</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Параметр">Флаг «Не работает»</td>
+                        <td data-th="Код поля">NotWorking</td>
+                        <td data-th="Тип">Логическое (формат: True, False)</td>
+                        <td data-th="Пример">Предприниматель</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Тип занятости</td>
+                        <td data-th="Код поля">EmploymentTypeId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#type_of_employment">Тип занятости</a></td>
+                        <td data-th="Пример">Предприниматель</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Сфера деятельности</td>
+                        <td data-th="Код поля">WorkplaceFieldOfActivity</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#field_of_activity">Сфера деятельности</a></td>
+                        <td data-th="Пример">Информационные технологии</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Наименование места работы</td>
+                        <td data-th="Код поля">WorkplaceName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Должность</td>
+                        <td data-th="Код поля">Position</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">*********</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Адрес рабочего места</td>
+                        <td data-th="Код поля">WorkplaceAddress</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">172312, г. Новосибирск, ул. Авиаконструктора Яковлева, 3Б</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Рабочий телефон</td>
+                        <td data-th="Код поля">WorkplacePhone</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">х (хххх) хх-хх-хх</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Стаж на текущем месте работы (в месяцах)</td>
+                        <td data-th="Код поля">CurrentWorkplaceExperience</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">10</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Общий трудовой стаж (в месяцах)</td>
+                        <td data-th="Код поля">TotalWorkExperience</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">35</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Месячный доход</td>
+                        <td data-th="Код поля">MonthlyIncome</td>
+                        <td data-th="Тип">Целое число</td>
+                        <td data-th="Пример">150200</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Регион рабочего места Строка</td>
+                        <td data-th="Код поля">WorkplaceRegionName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Новосибирская область</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Регион рабочего места</td>
+                        <td data-th="Код поля">WorkplaceRegionId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#region">Регион</a></td>
+                        <td data-th="Пример">Новосибирская область</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Город рабочего места Строка</td>
+                        <td data-th="Код поля">WorkplaceCityName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Новосибирск</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Город рабочего места</td>
+                        <td data-th="Код поля">WorkplaceCityId</td>
+                        <td data-th="Тип">Значение из справочника - <a target="_blank" href="directory.html#city">Город</a></td>
+                        <td data-th="Пример">Новосибирск</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="divided">
+                            <h3 class="h3 center">Контактное лицо</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Параметр">Имя контактного лица</td>
+                        <td data-th="Код поля">ContactPersonFirstName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Герасим</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Отчество контактного лица</td>
+                        <td data-th="Код поля">ContactPersonMiddleName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Степанович</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Фамилия контактного лица</td>
+                        <td data-th="Код поля">ContactPersonLastName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Марков</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Телефон контактного лица</td>
+                        <td data-th="Код поля">ContactPersonPhone</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">х (хххх) хх-хх-хх</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="divided">
+                            <h3 class="h3 center">Рабочий телефон</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-th="Параметр">Имя доверенного лица</td>
+                        <td data-th="Код поля">TrusteePersonFirstName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Катерина</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Отчество доверенного лица</td>
+                        <td data-th="Код поля">TrusteePersonMiddleName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Даниловна</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Фамилия доверенного лица</td>
+                        <td data-th="Код поля">TrusteePersonLastName</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Никитина</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Кем приходится доверенное лицо, например, брат</td>
+                        <td data-th="Код поля">TrusteePersonRelationshipType</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">Сестра</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                    <tr>
+                        <td data-th="Параметр">Телефон доверенного лица</td>
+                        <td data-th="Код поля">TrusteePersonPhone</td>
+                        <td data-th="Тип">Строка</td>
+                        <td data-th="Пример">х (хххх) хх-хх-хх</td>
+                        <td data-th="Обязательный"><span>-</span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Примеры и Подсказки -->
+        <section class="well3">
+            <div class="container">
+                <h3 class="h3 center">Пример запроса:</h3>
+                <div class="SEO-Text offs1">
+                    <div style="word-wrap: break-word;">
+                        https://aleba.ru/Application/GenericApi?UserId=1&ProgramId=1&DomainId=1& FirstName=Василий&LastName=Петров&MiddleName=Иванович&BirthDate=01.01.1990&SubjectPrice=10000&MobilePhone=+79000000000&Email=test@aleba.ru&RegionName= Адыгея&CityName=Адыгейск
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="well3">
+            <div class="container">
+                <h3 class="h3 center">Ответ сервера:</h3>
+                <div class="SEO-Text offs1">
+                    В случае если заявка была успешно заведена в системе, то сервер вернет ответ в формате JSON.<br/>
+                    <span style="color: green;">{"status":"OK","Error":""} - если всё хорошо</span><br/>
+                    <span style="color: red;">{"status":"Bad request","Error":"Текст ошибки"} - в случае возникновения ошибок</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--============================
+    FOOTER
+    =============================-->
+    <footer class="footer">
+    </footer>
+    <!--============================
+    Modal Windows
+    =============================-->
+    <section class="hidden">
+
+    </section>
+</div>
+<!--JS-->
+<script src="js/core.js"></script>
+
+<!-- coded by Razor -->
+</body>
+</html>

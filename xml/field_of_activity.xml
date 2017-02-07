@@ -1,0 +1,21 @@
+<list name ="Сфера деятельности">
+    <item><id>№</id><name>Описание</name></item>
+    <item><id>0</id><name>Охрана </name></item>
+    <item><id>1</id><name>Военная служба</name></item>
+    <item><id>2</id><name>Государственная служба</name></item>
+    <item><id>3</id><name>Информационные технологии</name></item>
+    <item><id>4</id><name>Консалтинг</name></item>
+    <item><id>5</id><name>Медицина</name></item>
+    <item><id>6</id><name>Наука</name></item>
+    <item><id>7</id><name>Образование</name></item>
+    <item><id>8</id><name>Промышленность</name></item>
+    <item><id>9</id><name>Некоммерческая организация</name></item>
+    <item><id>10</id><name>Строительство</name></item>
+    <item><id>11</id><name>Услуги</name></item>
+    <item><id>12</id><name>Энергетика</name></item>
+    <item><id>13</id><name>Продажи</name></item>
+    <item><id>14</id><name>Транспорт</name></item>
+    <item><id>15</id><name>Туризм</name></item>
+    <item><id>16</id><name>Финансы</name></item>
+    <item><id>17</id><name>Другое</name></item>
+</list>
